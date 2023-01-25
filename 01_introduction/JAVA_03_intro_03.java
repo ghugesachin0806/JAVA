@@ -14,6 +14,8 @@ public class JAVA_03_intro_03 {
 
         float marks = 6.5f;  // Here float is defined like this , by giving 'f' to the end of number
 
+        long lt = 999999999999L; // Here long is defined like this , by giving 'L/l' at the end of number
+
         char ch ='u';
 
         boolean th=false;
@@ -22,6 +24,7 @@ public class JAVA_03_intro_03 {
         System.out.println(marks);
         System.out.println(ch);
         System.out.println(th);
+        System.out.println(lt);
 
         ////////////////////////////////////////////////////////////////////////
 
@@ -50,6 +53,7 @@ public class JAVA_03_intro_03 {
 // 6.5  
 // u    
 // false
+// 999999999999
 
 // 5    
 
