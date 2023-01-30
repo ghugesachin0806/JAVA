@@ -81,15 +81,31 @@ public class JAVA_04_array_of_objects {
         subs[1] = new Subject("s102", "CN", 100);
         subs[2] = new Subject("s103", "OS", 100);
 
-        for (Subject st : subs) // by calling object array , it will call 'toString' name method only if it present
-        {                       // if it is not present , then it will return array objects address
+        subs[0].set_marks_obt(10);
+        subs[1].set_marks_obt(20);
+        subs[2].set_marks_obt(30);
+
+        // calling object array,it will call 'toString' name method only if it present
+        // if it is not present , then it will return array objects address
+
+        for (Subject st : subs) {
 
             System.out.println(st);
+        }
+
+        // another simple way
+
+        for (Subject stm : subs) {
+            System.out.println(stm.toString());
         }
     }
 
 }
 
-// name : DS sub_id : S101 marks_obt 0 out of 100
-// name : CN sub_id : s102 marks_obt 0 out of 100
-// name : OS sub_id : s103 marks_obt 0 out of 100
+// name : DS sub_id : S101 marks_obt 10 out of 100
+// name : CN sub_id : s102 marks_obt 20 out of 100
+// name : OS sub_id : s103 marks_obt 30 out of 100
+
+// name : DS sub_id : S101 marks_obt 10 out of 100
+// name : CN sub_id : s102 marks_obt 20 out of 100
+// name : OS sub_id : s103 marks_obt 30 out of 100
