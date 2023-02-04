@@ -39,6 +39,11 @@ public class JAVA_02_run_time_poly {
         Parent p2 =new Child();
         p2.display();
 
+
+        // Below method of subclass cannot be called, if we uses parent class reference for child class object ,
+        // only parent class methods and overridden methods in child class can be called, if reference belongs to parent class .
+        // p2.print_me(); // not allowed if parent class reference is used there for creation of child class object .
+
     }
 }
 

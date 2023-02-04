@@ -38,6 +38,7 @@ class Child extends Parent {
 public class JAVA_07_dynamic_method_dispatch {
 
     public static void main(String arg[]) {
+
         // Here super class reference is there for sub-class's object
         Parent p1 = new Child();
 
@@ -45,6 +46,13 @@ public class JAVA_07_dynamic_method_dispatch {
 
         p1.display(); // Child method will be called
         // p1.print_me(); // Not allowed , only superclass's method and overridden methods allowed
+
+        Child c1;
+        c1=new Child();
+
+        // Both the methods of child class are allowed , because reference is also of Child class
+        c1.display();
+        c1.print_me();
 
     }
 }
