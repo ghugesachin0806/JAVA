@@ -15,6 +15,7 @@ interface Test {
     }
 
     private void meth5() // can only be accessed within this class
+    // 'private' methods can not be abstract method
     {
 
         System.out.println("private method of interface class ");
@@ -22,6 +23,7 @@ interface Test {
 
     default void meth6() // directly can not be accessed , but
     // a class that implements the interface can access this 'default' method by creating object
+    // also we can override this method in implemented classes
     {
 
         meth5(); // private method is used here
@@ -50,7 +52,7 @@ class Sub_Test1 implements Test {
 }
 
 // interface is extended in interface
-interface Test2 extends Test
+interface Test2 extends Test  // in interface another interface is 'extended'
 {
 
     void meth7();
@@ -58,7 +60,7 @@ interface Test2 extends Test
 
 // if interface's all methods which don't have body are not overridden in implemented class ,
 // then that class become abstract class
-abstract class Sub_Test2 implements Test
+abstract class Sub_Test2 implements Test  // in a class another interface is 'implemented'
 {
 
 }
