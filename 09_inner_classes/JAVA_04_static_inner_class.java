@@ -1,3 +1,6 @@
+
+// only Inner classes can be static class , outer classes are not allowed to be as static
+
 class Outer {
 
     static int temp1 = 10;
