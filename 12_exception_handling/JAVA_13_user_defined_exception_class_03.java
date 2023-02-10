@@ -1,6 +1,5 @@
 // User-defined exception 
 
-
 class UserException extends Exception {
 
     @Override // optional to write @override
@@ -24,9 +23,9 @@ public class JAVA_13_user_defined_exception_class_03 {
 
     }
 
-    static void fun2() throws UserException{
+    static void fun2() throws UserException {
 
-        fun1(10,0);
+        fun1(10, 0);
 
         System.out.println("fun2() block : ");
 
@@ -58,5 +57,5 @@ public class JAVA_13_user_defined_exception_class_03 {
 }
 
 // User-defined Exception class's toString method()
-// fun3() block : 
+// fun3() block :
 // main block :
