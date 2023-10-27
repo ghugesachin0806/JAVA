@@ -13,6 +13,11 @@ class Parent {
 
         System.out.println("This is parent class");
     }
+
+    public void fun()
+    {
+        System.out.println("parent fun method");
+    }
 }
 
 class Child extends Parent {
@@ -45,6 +50,7 @@ public class JAVA_07_dynamic_method_dispatch {
         // Child c1 = new Parent(); <------- not allowed
 
         p1.display(); // Child method will be called
+        p1.fun(); // parent method can be also called using child object by using parent class reference
         // p1.print_me(); // Not allowed , only superclass's method and overridden methods allowed
 
         Child c1;
@@ -58,3 +64,6 @@ public class JAVA_07_dynamic_method_dispatch {
 }
 
 // This is child class
+// parent fun method       
+// This is child class     
+// print_me of child class

@@ -13,6 +13,11 @@ class Parent {
 
         System.out.println("This is parent class");
     }
+
+    public void fun()
+    {
+        System.out.println("parent fun method");
+    }
 }
 
 class Child extends Parent {
@@ -58,6 +63,7 @@ public class JAVA_06_method_overriding {
 
         // Here only super class's methods and overriden methods by sub class's object are allowed
         // sub-class's (object's) other methods are not allowed .
+        // can call all parent class methods either overidden or not, doesn't matter.
 
         // p2.print_me(); <------ it will not allowed .(it is in object's class(sub class) but not in reference class(super class))
 

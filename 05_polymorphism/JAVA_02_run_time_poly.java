@@ -5,6 +5,11 @@ class Parent {
 
         System.out.println("This is parent class");
     }
+
+    public void fun()
+    {
+        System.out.println("parent fun method");
+    }
 }
 
 class Child extends Parent {
@@ -38,6 +43,7 @@ public class JAVA_02_run_time_poly {
         // 2nd possibility of object at runtime and method called at runtime
         Parent p2 =new Child();
         p2.display();
+        p2.fun(); // Attention Here
 
 
         // Below method of subclass cannot be called, if we uses parent class reference for child class object ,
@@ -49,3 +55,4 @@ public class JAVA_02_run_time_poly {
 
 // This is parent class
 // This is child class
+// parent fun method 
