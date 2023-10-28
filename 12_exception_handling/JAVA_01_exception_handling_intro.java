@@ -25,3 +25,7 @@ public class JAVA_01_exception_handling_intro {
 
     }
 }
+
+// The equation is divisible by zero : 
+// java.lang.ArithmeticException: / by zero
+// 1st Program executed successfully :  
